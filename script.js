@@ -50,19 +50,19 @@ function printAnd () {
 }
 
 function printWeddingDate () {
-    showDate.innerHTML = (`on &nbsp${inputWeddingDate.value}`)
+    showDate.innerHTML = (`on ${inputWeddingDate.value}`)
 }
 
 function printWeddingTime () {
-    showTime.innerHTML = (`&nbsp at &nbsp${inputWeddingTime.value}`)
+    showTime.innerHTML = (` at ${inputWeddingTime.value}`)
 }
 
 function printLocation () {
-    showLocation.innerHTML = (`at &nbsp${inputLocation.value}`)
+    showLocation.innerHTML = (`at ${inputLocation.value}`)
 }
 
 function printRsvpDate () {
-    showRsvpDate.innerHTML = (`<strong>RSVP</strong><br>by &nbsp${inputRsvpDate.value} &nbspto`)
+    showRsvpDate.innerHTML = (`<strong>RSVP</strong><br>by ${inputRsvpDate.value} to`)
 }
 
 function printEmail () {
@@ -106,3 +106,4 @@ function changeToHearts () {
     displayInvitation.style.fontFamily = "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif"
     displayInvitation.style.color = "white";
 }
+
