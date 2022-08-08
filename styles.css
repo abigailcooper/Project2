@@ -1,0 +1,152 @@
+body {
+    background-color: #deeeea;
+}
+
+#layout{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1F0250;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+
+
+/* Buttons */
+
+#btnClassic {
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif ;
+    font-style: italic;
+    color: black;
+    background-color: #FCEDE3;
+    padding: 8px 20px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 10px 2px grey;  
+}
+
+#btnFlowers {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #565555;
+    background-color: #E5E4E2;
+    padding: 8px 20px;
+    border-width: 2px;
+    border-color: #565555;
+    border-style: solid;
+    border-radius: 20px;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 10px 2px grey;  
+}
+
+#btnHearts {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #B9121B;
+    padding: 8px 20px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 10px 2px grey;
+}
+
+
+
+/* General */
+
+#buttons {
+    margin-left: 6rem;
+}
+
+#weddingDetails {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-left: 6rem;
+}
+
+form input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 15rem;
+    display: inline-block;
+}
+
+label {
+    width: 9rem;
+    display: inline-block;
+}
+
+
+#display {
+    height: 90vh;
+    aspect-ratio: 2/3;
+    border-color:#1F0250;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12vh 5vh;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url("images/classic.jpg");
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    background-size: cover;
+}
+
+#display > * {
+    padding-bottom: 3vh;
+}
+
+#displayRsvpDate{
+    padding-bottom: 0;
+    padding-top: 3vh;
+}
+
+#displayName1, #displayName2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#conjunction, #invite, #displayDate, #displayTime, #displayLocation, #displayRsvpDate, #displayEmail, #displayPhone {
+    font-size: 1.5rem
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+
+    #layout {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px 40px;
+    }
+
+    #pageHeading {
+        grid-column: 1/3;
+        padding-top: 1rem;
+    }
+
+    #display {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 17vh 5vh;
+    }
+
+}
+

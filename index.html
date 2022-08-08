@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Creator</title>
+    <link rel="stylesheet" href = "./styles.css">
+</head>
+<body>
+    <div id="layout">
+        <div id="pageHeading">
+            <h1>Create your wedding invitation</h1>
+        </div>
+        <div id="details">
+            <h2>Choose style</h2>
+                <div id="buttons">
+                    <input type="button" class="btn" id = "btnClassic" value="Classic">
+                    <input type="button" class="btn" id = "btnFlowers" value="Flower">
+                    <input type="button" class="btn" id = "btnHearts" value="Hearts">
+                </div> 
+            <h2>Enter details</h2>
+                <form method="post" id="weddingDetails">
+                    <label for="name1">Name 1</label>
+                    <input type="text" id="name1" name="name1" placeholder="Who's getting married?" required>
+                    <br>
+                    <label for="name2">Name 2</label>
+                    <input type="text" id="name2" name="name2" placeholder="Who's getting married?" required>
+                    <br>
+                    <label for="weddingDate">Date</label>
+                    <input type="text" id="weddingDate" name="weddingDate" placeholder="When's the big day?" required>
+                    <br>
+                    <label for="weddingTime">Time</label>
+                    <input type="text" id="weddingTime" name="weddingTime" placeholder="What time?" required>
+                    <br>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Where's the wedding?" required>
+                    <br>
+                    <label for="rsvpDate">RSVP date</label>
+                    <input type="text" id="rsvpDate" name="rsvpDate" placeholder="When should guests reply?">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                </form>
+        </div>
+        <div id = display>
+            <div id = invite>You are invited to<br>celebrate the marriage of</div>
+            <div id = displayName1></div>
+            <div id = conjunction></div>
+            <div id = displayName2></div>
+            <div id = when>
+                <span id = displayDate></span>
+                <span id = displayTime></span>
+            </div>
+            <div id = displayLocation></div>
+            <div id = displayRsvpDate></div>
+            <div id = contact>
+                <span id = displayEmail></span>
+                <span id = displayPhone></span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
